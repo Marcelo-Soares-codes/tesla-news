@@ -1,0 +1,13 @@
+.container-articles {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.Articles{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+

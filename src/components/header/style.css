@@ -1,0 +1,51 @@
+header {
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra na parte inferior */
+  background-color: #fff;
+}
+
+.header {
+  height: 70%;
+  display: flex;
+}
+
+.navBar {
+  display: flex;
+  background-color: #cc0003;
+  height: 30%;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.navBar ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ativa o modelo flexível para os itens da lista */
+}
+
+.navBar li {
+  margin-right: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.navBar a {
+  text-decoration: none; /* Remove a decoração de texto padrão dos links */
+  color: white; /* Cor do texto dos links */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 18px; /* Tamanho da fonte */
+  transition: color 0.3s; /* Adiciona uma transição suave à cor do texto */
+}
+
+.navBar a:hover {
+  color: #470505; /* Cor do texto ao passar o mouse sobre o link */
+}
+
+header h1{
+  color: #cc0003;
+  margin: auto;
+  font-size: 45px;
+}
