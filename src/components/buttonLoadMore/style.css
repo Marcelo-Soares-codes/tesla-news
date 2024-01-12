@@ -1,0 +1,20 @@
+
+.buttonLoadMore{
+  background-color: #cc0003;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 30px;
+  width: 25%;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.buttonLoadMore:hover{
+  background-color: #f10004;
+}
+
+.buttonLoadMore:disabled{
+  background-color: #4b4b4b;
+  cursor: not-allowed;
+}
