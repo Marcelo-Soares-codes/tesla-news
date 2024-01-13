@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component clicking on Card opens the URL in a new tab 1`] = `
+<h1
+  class="title"
+>
+  Card Title
+</h1>
+`;
+
+exports[`Card Component renders Card correctly 1`] = `
+<h1
+  class="title"
+>
+  Card Title
+</h1>
+`;

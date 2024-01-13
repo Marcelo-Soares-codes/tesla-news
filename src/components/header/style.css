@@ -11,6 +11,8 @@ header {
 .header {
   height: 70%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navBar {
@@ -47,5 +49,9 @@ header {
 header h1{
   color: #cc0003;
   margin: auto;
-  font-size: 45px;
+  font-size: 2.5rem;
+}
+
+.spacer{
+  width: 30%;
 }

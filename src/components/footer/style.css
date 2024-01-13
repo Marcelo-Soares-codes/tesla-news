@@ -1,0 +1,23 @@
+
+footer{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  background-color: #660002;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 8px 4px  rgba(0, 0, 0, 0.2);
+}
+
+.containerItems{
+  margin: auto;
+}
+.containerLinks{
+  margin-top: 20px;
+}
+
+.link{
+  width: 12%;
+}

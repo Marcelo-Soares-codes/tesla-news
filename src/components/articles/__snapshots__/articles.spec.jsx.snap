@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articles Component renders Articles correctly with articles 1`] = `
+<div
+  data-testid="mock-card-article-1"
+>
+  Article 1
+</div>
+`;
+
+exports[`Articles Component renders Articles correctly with removed article 1`] = `
+<div
+  data-testid="mock-card-article-2"
+>
+  Article 2
+</div>
+`;

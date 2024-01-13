@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLoadMore Component renders ButtonLoadMore correctly 1`] = `
+<div>
+  <button
+    class="buttonLoadMore"
+  >
+    Load More
+  </button>
+</div>
+`;

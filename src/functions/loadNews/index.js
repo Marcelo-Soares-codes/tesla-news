@@ -1,6 +1,6 @@
 export async function loadNews() {
   try {
-    const response = await fetch("https://newsapi.org/v2/everything?q=tesla&from=2023-12-11&sortBy=publishedAt&apiKey=ced886074df34a5cb7a1be2ac4e691fa");
+    const response = await fetch("https://newsapi.org/v2/everything?q=tesla&from=2023-12-13&sortBy=publishedAt&apiKey=ced886074df34a5cb7a1be2ac4e691fa");
     const data = await response.json();
 
     if (data.articles) {
