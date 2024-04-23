@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import './style.css';
-import { Header } from '../../components/header';
-import { loadNews } from '../../functions/loadNews';
-import { Articles } from '../../components/articles';
-import { ButtonLoadMore } from '../../components/buttonLoadMore';
+import React, { Component } from "react";
+import "./style.css";
+import { Header } from "../../components/header";
+import { loadNews } from "../../functions/loadNews";
+import { Articles } from "../../components/articles";
+import { ButtonLoadMore } from "../../components/buttonLoadMore";
 import { LoadMoreNews } from "../../functions/loadMoreNews";
 import { Footer } from "../../components/footer";
 
@@ -13,7 +13,7 @@ class App extends Component {
     allNews: [],
     initialNew: 0,
     newPerPage: 6,
-    searchValue: ''
+    searchValue: "",
   };
 
   componentDidMount() {
@@ -30,32 +30,52 @@ class App extends Component {
   };
 
   render() {
-    const { articles, allNews, initialNew, newPerPage, searchValue } = this.state;
+    const { articles, allNews, initialNew, newPerPage, searchValue } =
+      this.state;
     const noMoreNews = newPerPage >= allNews.length;
 
     // eslint-disable-next-line no-unused-vars
-    const filteredArticles = !!searchValue 
-    ? allNews.filter(article => {
-      const titleMatch = article.title && article.title.toLowerCase().includes(searchValue.toLowerCase());
-      const authorMatch = article.author && article.author.toLowerCase().includes(searchValue.toLowerCase());
+    const filteredArticles = !!searchValue
+      ? allNews.filter((article) => {
+          const titleMatch =
+            article.title &&
+            article.title.toLowerCase().includes(searchValue.toLowerCase());
+          const authorMatch =
+            article.author &&
+            article.author.toLowerCase().includes(searchValue.toLowerCase());
 
-      return titleMatch || authorMatch;
-    })
-  : articles;
+          return titleMatch || authorMatch;
+        })
+      : articles;
 
     return (
-      <div className='App'>
-
+      <div className="App">
         <Header searchValue={searchValue} handleChange={this.handleChange} />
-        <section className='container-articles'>
-          <Articles articles={filteredArticles} />
-        </section>
-        {!searchValue &&
-        <ButtonLoadMore
-          disabled={noMoreNews}
-          onClick={() => this.setState(LoadMoreNews(articles, allNews, initialNew, newPerPage))}
-        />}
-        <Footer/>
+
+        {filteredArticles.length > 0 ? (
+          <div>
+            <section className="container-articles">
+              <Articles articles={filteredArticles} />
+            </section>
+
+            {!searchValue && (
+              <ButtonLoadMore
+                disabled={noMoreNews}
+                onClick={() =>
+                  this.setState(
+                    LoadMoreNews(articles, allNews, initialNew, newPerPage)
+                  )
+                }
+              />
+            )}
+          </div>
+        ) : (
+          <div className="NotArticles">
+            Ops parece que estamos sem noticias por aqui!
+          </div>
+        )}
+
+        <Footer />
       </div>
     );
   }
