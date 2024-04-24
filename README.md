@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Tesla News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Tesla News](./public/screen-home.png)
 
-## Available Scripts
+## Descrição
 
-In the project directory, you can run:
+O Tesla News é um aplicativo web que fornece notícias atualizadas sobre a empresa Tesla. Ele utiliza a API de notícias para recuperar os últimos artigos relacionados à Tesla e os exibe de forma organizada para os usuários.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Visualização de notícias**: Os usuários podem visualizar os últimos artigos de notícias sobre a Tesla.
+- **Atualização automática**: As notícias são atualizadas automaticamente conforme novos artigos são publicados.
+- **Pesquisa avançada**: Os usuários podem pesquisar por palavras-chave específicas para encontrar notícias sobre tópicos de seu interesse.
+- **Compartilhamento fácil**: Os usuários podem compartilhar os artigos de notícias através de redes sociais ou copiar o link para compartilhamento.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Acesso ao Aplicativo
 
-### `npm test`
+Você pode acessar o aplicativo [aqui](https://seudominio.com/tesla-news).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- React.js: Biblioteca JavaScript para construção da interface do usuário.
+- React Router: Para navegação entre as páginas do aplicativo.
+- Axios: Para fazer requisições HTTP para a API de notícias.
+- CSS: Estilização dos componentes e páginas do aplicativo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para executar o projeto localmente, siga estas etapas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório para o seu computador:
 
-### `npm run eject`
+```bash
+git clone https://github.com/Marcelo-Soares-codes/CineQuiz.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Instale as dependências do projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd tesla-news
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Inicie o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+## Contribuição
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contribuições são bem-vindas! Se você deseja melhorar o Spelet, sinta-se à vontade para abrir uma issue ou enviar um pull request.
