@@ -71,7 +71,7 @@ class App extends Component {
           </div>
         ) : (
           <div className="NotArticles">
-            Ops parece que estamos sem noticias por aqui!
+            Oops, it looks like we're out of news here!
           </div>
         )}
 
