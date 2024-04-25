@@ -15,7 +15,7 @@ O Tesla News é um aplicativo web que fornece notícias atualizadas sobre a empr
 
 ## Acesso ao Aplicativo
 
-Você pode acessar o aplicativo [aqui](https://seudominio.com/tesla-news).
+Você pode acessar o aplicativo [aqui](https://tesla-news-app.netlify.app).
 
 ## Tecnologias Utilizadas
 
